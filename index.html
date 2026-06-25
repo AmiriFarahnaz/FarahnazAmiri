@@ -4,57 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farahnaz Amiri | Academic Profile</title>
-    
-    <!-- MathJax for Formulas -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; color: #24292e; max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #000; max-width: 950px; margin: 40px auto; padding: 0 20px; background-color: #ffffff; }
         
-        /* Header & Nav */
-        header { border-bottom: 1px solid #eaecef; padding-bottom: 16px; margin-bottom: 32px; display: flex; justify-content: space-between; align-items: center; }
-        .name-logo { font-size: 1.5em; font-weight: bold; color: #4a148c; text-decoration: none; text-transform: uppercase; }
-        nav a { margin-left: 16px; text-decoration: none; color: #4a148c; font-weight: 500; }
-        nav a:hover { text-decoration: underline; }
+        /* Navigation */
+        header { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #ddd; padding-bottom: 20px; margin-bottom: 40px; }
+        .logo { font-weight: bold; font-size: 1.5em; color: #4a148c; letter-spacing: 1px; }
+        .nav a { margin-left: 25px; text-decoration: none; color: #4a148c; font-size: 1.1em; }
+        .nav a:hover { text-decoration: underline; }
 
         /* Profile Section */
-        .profile-container { display: flex; gap: 32px; margin-bottom: 40px; align-items: flex-start; }
-        .profile-pic { width: 220px; border-radius: 6px; border: 1px solid #eaecef; }
-        .profile-info h1 { margin-top: 0; font-size: 2em; color: #4a148c; }
-        .profile-info p { margin: 8px 0; }
-
-        /* Headings like the screenshot */
-        h2 { font-size: 1.5em; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid #eaecef; margin-top: 40px; margin-bottom: 16px; color: #000; }
-
-        /* Lists */
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; list-style-type: disc; }
+        .profile { display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 40px; }
+        .profile img { width: 250px; border-radius: 4px; background-color: #f0f0f0; }
+        .profile-text { flex: 1; min-width: 300px; }
+        h1 { margin: 0 0 10px 0; color: #4a148c; }
         
-        /* Links */
+        /* Typography */
+        h2 { color: #000; border-bottom: 1px solid #eee; padding-bottom: 8px; margin-top: 40px; font-size: 1.5em; }
+        ul { list-style-type: disc; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        
+        /* Links style like the image */
         a { color: #4a148c; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .link-note { color: #6f42c1; font-size: 0.9em; }
+        .small-link { font-size: 0.95em; color: #4a148c; }
     </style>
 </head>
 <body>
 
     <header>
-        <a href="#" class="name-logo">Farahnaz Amiri</a>
-        <nav>
+        <div class="logo">FARAHNAZ AMIRI</div>
+        <div class="nav">
             <a href="#about">About</a>
             <a href="#positions">Positions</a>
             <a href="#publications">Publications</a>
             <a href="#talks">Talks</a>
-        </nav>
+        </div>
     </header>
 
-    <div class="profile-container" id="about">
-        <img src="https://raw.githubusercontent.com/AmiriFarahnaz/FarahnazAmiri/main/Farahnaz-Amiri-Number-Theory.jpg" alt="Farahnaz Amiri" class="profile-pic">
-        <div class="profile-info">
+    <div class="profile" id="about">
+        <!-- اصلاح لینک عکس بر اساس فایل موجود در گیت هاب شما -->
+        <img src="https://raw.githubusercontent.com/AmiriFarahnaz/FarahnazAmiri/main/Farahnaz-Amiri-Number-Theory.jpg" alt="Farahnaz Amiri">
+        
+        <div class="profile-text">
             <h1>Farahnaz Amiri</h1>
-            <p><strong>Researcher (Visiting Scholar)</strong></p>
-            <p>IPM (Institute for Research in Fundamental Sciences)</p>
+            <p><strong>Researcher (Visiting Scholar)</strong><br>IPM (Institute for Research in Fundamental Sciences)</p>
             <p>My research interests lie in <strong>Arithmetic Statistics</strong>, <strong>Composition Laws</strong>, and <strong>Number Field Class Groups</strong>.</p>
             <p>Email: <a href="mailto:f.amiri@ipm.ir">f.amiri@ipm.ir</a></p>
         </div>
@@ -62,20 +59,20 @@
 
     <h2 id="positions">Positions</h2>
     <ul>
-        <li><strong>Visiting Scholar</strong>, IPM (Institute for Research in Fundamental Sciences). 2025 – Present</li>
-        <li><strong>Postdoctoral Fellow</strong>, Tsinghua BIMSA (Beijing Institute of Mathematical Sciences and Applications). 2023 – 2025</li>
+        <li><strong>Visiting Scholar</strong>, IPM (Institute for Research in Fundamental Sciences). <em>2025 – Present</em></li>
+        <li><strong>Postdoctoral Fellow</strong>, Tsinghua BIMSA. <em>2023 – 2025</em></li>
     </ul>
 
     <h2 id="publications">Publications & Preprints</h2>
     <ul>
-        <li><strong>The Class Number One Problem for Imaginary Octic Non-CM Extensions of \(\mathbb{Q}\)</strong>. <em>Bulletin of the Iranian Mathematical Society (BIMS)</em> 49 (2023).</li>
-        <li><strong>Computing \(p\)-Class Group Structure in Real Quadratic Fields: A New Approach</strong>. <em>Submitted (2026)</em> | <a href="https://arxiv.org/abs/2601.19288" target="_blank">arXiv:2601.19288</a></li>
-        <li><strong>Average sizes of \(p\)-class groups in certain families of Number Fields</strong>. (In Preparation).</li>
+        <li><strong>The Class Number One Problem for Imaginary Octic Non-CM Extensions of \(\mathbb{Q}\)</strong>, <em>BIMS (2023)</em>.</li>
+        <li><strong>Computing \(p\)-Class Group Structure in Real Quadratic Fields</strong>, <em>Submitted (2026)</em> | <a href="https://arxiv.org/abs/2601.19288">arXiv:2601.19288</a></li>
+        <li><strong>Average sizes of \(p\)-class groups in certain families of Number Fields</strong>, <em>In Preparation</em>.</li>
     </ul>
 
     <h2 id="talks">Invited Talks</h2>
     <ul>
-        <li><strong>Québec–Vermont Number Theory Seminar (QVNTS)</strong>. Montréal, Canada — Jan 2026. <a href="#" class="link-note">seminars</a></li>
-        <li><strong>Lodha Mathematical Sciences Institute Arithmetic Statistics Workshop</strong>. Mumbai, India — Aug 2025. <a href="#" class="link-note">program</a></li>
+        <li><strong>Québec–Vermont Number Theory Seminar (QVNTS)</strong>. Montréal, Canada — Jan 2026. <a href="#" class="small-link">seminars</a></li>
+        <li><strong>Lodha Mathematical Sciences Institute Arithmetic Statistics Workshop</strong>. Mumbai, India — Aug 2025. <a href="#" class="small-link">program</a></li>
         <li><strong>UCalgary Algebra and Number Theory Seminar</strong>. University of Calgary, Canada — Apr 2025.</li>
-        <li><strong>Waterloo Number Theory Seminar</strong>. University of Waterloo, Canada — Apr 
+        <li><strong>Waterloo
