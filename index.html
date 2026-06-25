@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farahnaz Amiri | Personal Website</title>
+    <title>Farahnaz Amiri | Research Website</title>
+    
+    <!-- MathJax for Mathematical Notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <style>
         body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #333; max-width: 950px; margin: 0 auto; padding: 40px; background-color: #fcfcfc; }
         header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 50px; border-bottom: 2px solid #5d1f5e; padding-bottom: 15px; }
-        .nav a { margin-left: 20px; text-decoration: none; color: #5d1f5e; font-weight: 500; transition: 0.3s; }
-        .nav a:hover { color: #8e2d8f; text-decoration: underline; }
-        .intro { display: flex; gap: 50px; align-items: flex-start; margin-bottom: 60px; flex-wrap: wrap; }
-        .intro img { width: 280px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); border: 1px solid #ddd; }
+        .nav a { margin-left: 20px; text-decoration: none; color: #5d1f5e; font-weight: 500; }
+        .intro { display: flex; gap: 50px; align-items: flex-start; margin-bottom: 30px; flex-wrap: wrap; }
+        .intro img { width: 280px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
         .intro-text { flex: 1; min-width: 300px; }
-        h1 { color: #5d1f5e; margin-top: 0; font-size: 2.4em; }
-        h2 { color: #5d1f5e; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 45px; font-weight: 600; }
-        .contact { color: #555; font-size: 0.95em; margin-top: 20px; line-height: 1.8; }
-        .contact a { color: #5d1f5e; text-decoration: none; font-weight: 500; }
-        ul { list-style-type: none; padding-left: 0; }
-        li { margin-bottom: 15px; position: relative; padding-left: 20px; }
-        li::before { content: "•"; color: #5d1f5e; font-weight: bold; position: absolute; left: 0; }
-        .date { color: #777; font-style: italic; font-size: 0.9em; }
-        .cv-button { display: inline-block; background-color: #5d1f5e; color: white !important; padding: 6px 18px; border-radius: 5px; margin-top: 12px; text-decoration: none !important; font-weight: bold; transition: 0.3s; }
-        .cv-button:hover { background-color: #431644; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
-        hr { border: 0; border-top: 1px solid #eee; margin: 50px 0 20px 0; }
-        @media (max-width: 600px) { .intro { flex-direction: column; align-items: center; text-align: center; } .nav { display: none; } }
+        
+        /* CV Bar Style */
+        .cv-bar { background-color: #f4f0f5; border: 1px solid #e1d8e2; padding: 20px; border-radius: 8px; text-align: center; margin: 30px 0; }
+        .cv-btn { background-color: #5d1f5e; color: white !important; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; }
+        .cv-btn:hover { background-color: #431644; transform: translateY(-2px); }
+
+        h1 { color: #5d1f5e; margin-top: 0; }
+        h2 { color: #5d1f5e; border-bottom: 1px solid #5d1f5e; padding-bottom: 10px; margin-top: 45px; }
+        .date { color: #777; font-style: italic; float: right; }
+        li { margin-bottom: 15px; list-style-type: square; }
+        .publication-title { font-weight: bold; display: block; }
+        .journal { font-style: italic; color: #555; }
     </style>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
     <header>
-        <div style="font-weight: bold; color: #5d1f5e; font-size: 1.4em; letter-spacing: 1px;">FARAHNAZ AMIRI</div>
+        <div style="font-weight: bold; color: #5d1f5e; font-size: 1.4em;">FARAHNAZ AMIRI</div>
         <div class="nav">
             <a href="#about">About</a>
             <a href="#positions">Positions</a>
@@ -41,59 +43,68 @@
     </header>
 
     <section class="intro" id="about">
-        <img src="https://raw.githubusercontent.com/AmiriFarahnaz/FarahnazAmiri/main/Farahnaz-Amiri-Number-Theory.jpg.jpg" alt="Farahnaz Amiri">
-        
+        <img src="https://raw.githubusercontent.com/AmiriFarahnaz/FarahnazAmiri/main/Farahnaz-Amiri-Number-Theory.jpg" alt="Farahnaz Amiri">
         <div class="intro-text">
             <h1>Farahnaz Amiri</h1>
-            <p style="font-size: 1.15em;"><b>Researcher (Visiting Scholar)</b><br>
-            IPM (Institute for Research in Fundamental Sciences)</p>
-            <p>My research interests lie in <b>Arithmetic Statistics</b>, <b>Composition Laws</b>, and <b>Number Field Class Groups</b>. I am particularly interested in the distribution of class groups and the application of geometry of numbers in arithmetic.</p>
-            <div class="contact">
-               <b>Office:</b> 215 Niavaran Bldg, Tehran, Iran <br>
-                 <b>Email:</b> <a href="mailto:amiryii92@gmail.com">amiryii92@gmail.com</a><br>
-                 <b>Curriculum Vitae:</b> <a href="https://github.com/AmiriFarahnaz/FarahnazAmiri/raw/main/CV%20Farahnaz%20Amiri.pdf" class="cv-button">Download CV (PDF)</a>
-            </div>
+            <p><b>Researcher (Visiting Scholar)</b><br> IPM (Institute for Research in Fundamental Sciences)</p>
+            <p>My research interests lie in <b>Arithmetic Statistics</b>, <b>Composition Laws</b>, and <b>Number Field Class Groups</b>.</p>
+            <p>Email: <a href="mailto:f.amiri@ipm.ir">f.amiri@ipm.ir</a></p>
         </div>
     </section>
 
-    <h2 id="positions">Academic Positions</h2>
+    <!-- CV Bar -->
+    <section class="cv-bar">
+        <p style="margin: 0 0 15px 0; font-size: 1.1em;">For more details on my academic background and experience:</p>
+        <a href="https://github.com/AmiriFarahnaz/FarahnazAmiri/blob/main/CV%20Farahnaz%20Amiri.pdf" target="_blank" class="cv-btn">Download Full CV (PDF)</a>
+    </section>
+
+    <h2 id="positions">Positions</h2>
     <ul>
-        <li><b>Researcher (Visiting Scholar)</b>, IPM, Tehran, Iran <span class="date">(2025–Present)</span></li>
-        <li><b>Postdoctoral Fellow</b>, BIMSA (Yanqi Lake Beijing Institute of Mathematical Sciences and Applications), China <span class="date">(2023–2025)</span></li>
+        <li><b>Visiting Scholar</b>, IPM (Institute for Research in Fundamental Sciences), Tehran, Iran. <span class="date">2025 – Present</span></li>
+        <li><b>Postdoctoral Fellow</b>, Tsinghua BIMSA (Beijing Institute of Mathematical Sciences and Applications). <span class="date">2023 – 2025</span></li>
     </ul>
 
-    <h2 id="education">Education</h2>
-    <ul>
-        <li><b>Ph.D. in Mathematics</b>, Tarbiat Modares University, Tehran, Iran.</li>
-        <li><b>M.Sc. in Mathematics</b>, Sharif University of Technology, Tehran, Iran.</li>
-    </ul>
-
-    <h2 id="publications">Selected Publications & Preprints</h2>
+    <h2 id="publications">Publications & Preprints</h2>
     <ul>
         <li>
-            <b>The Class Number One Problem for Imaginary Octic Non-CM Extensions of \(\mathbb{Q}\)</b><br>
-            <i>Bulletin of the Iranian Mathematical Society (BIMS)</i> 49 (2023).
+            <span class="publication-title">The Class Number One Problem for Imaginary Octic Non-CM Extensions of \(\mathbb{Q}\)</span>
+            <span class="journal">Bulletin of the Iranian Mathematical Society (BIMS)</span>, Vol. 49, 2023.
         </li>
         <li>
-            <b>Computing \(p\)-Class Group Structure in Real Quadratic Fields: A New Approach</b><br>
-            <i>Submitted (2026)</i> | <a href="https://arxiv.org/abs/2601.19288" target="_blank" style="color: #5d1f5e; font-weight: bold;">arXiv:2601.19288</a>
-        </li>
-        <li>
-            <b>Higher Composition Laws for Non-Galois Number Fields</b><br>
-            <i>In preparation.</i>
+            <span class="publication-title">Computing \(p\)-Class Group Structure in Real Quadratic Fields: A New Approach</span>
+            <span class="journal">Submitted</span> (2026) | <a href="https://arxiv.org/abs/2601.19288" target="_blank">arXiv:2601.19288</a>
         </li>
     </ul>
 
-    <h2 id="talks">Invited Talks & Seminars</h2>
+    <h2>In Preparation</h2>
     <ul>
-        <li><b>IPM Workshop on Elliptic Curves</b>, Tehran, Iran — <span class="date">Nov 2025</span></li>
-        <li><b>Number Theory Lunch Seminar</b>, Tsinghua BIMSA, Beijing, China — <span class="date">May 2025</span></li>
-        <li><b>YMSC Workshop</b>, Beijing, China — <span class="date">Apr 2025</span></li>
-        <li><b>BIMSA Workshop</b>, Beijing, China — <span class="date">Dec 2024</span></li>
+        <li>
+            <span class="publication-title">Average sizes of \(p\)-class groups in certain families of Number Fields.</span>
+            In collaboration with research groups at IPM and Tsinghua.
+        </li>
+        <li>
+            <span class="publication-title">On the distribution of class groups of non-abelian extensions.</span>
+        </li>
     </ul>
 
-    <hr>
-    <p align="center" style="color: #888; font-size: 0.85em;">
+    <h2 id="talks">Selected Talks</h2>
+    <ul>
+        <li>
+            <b>Number Theory Seminar</b>, IPM, Tehran. <span class="date">May 2025</span><br>
+            <i>Topic: Composition Laws and Arithmetic Statistics.</i>
+        </li>
+        <li>
+            <b>BIMSA Math Colloquium</b>, Beijing, China. <span class="date">Nov 2024</span><br>
+            <i>Topic: Class groups of octic extensions.</i>
+        </li>
+        <li>
+            <b>International Workshop on Arithmetic Geometry</b>. <span class="date">2023</span><br>
+            <i>Topic: The Class Number One Problem.</i>
+        </li>
+    </ul>
+
+    <hr style="margin-top: 60px; border: 0; border-top: 1px solid #ddd;">
+    <p style="text-align: center; color: #888; font-size: 0.9em; margin-bottom: 40px;">
         &copy; 2026 Farahnaz Amiri | Last updated: June 2026
     </p>
 
