@@ -3,110 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farahnaz Amiri | Research Website</title>
+    <title>Farahnaz Amiri | Academic Profile</title>
     
-    <!-- MathJax for Mathematical Notation -->
+    <!-- MathJax for Formulas -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <style>
-        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #333; max-width: 950px; margin: 0 auto; padding: 40px; background-color: #fcfcfc; }
-        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 50px; border-bottom: 2px solid #5d1f5e; padding-bottom: 15px; }
-        .nav a { margin-left: 20px; text-decoration: none; color: #5d1f5e; font-weight: 500; }
-        .intro { display: flex; gap: 50px; align-items: flex-start; margin-bottom: 30px; flex-wrap: wrap; }
-        .intro img { width: 280px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
-        .intro-text { flex: 1; min-width: 300px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; color: #24292e; max-width: 900px; margin: 40px auto; padding: 0 20px; }
         
-        /* CV Bar Style */
-        .cv-bar { background-color: #f4f0f5; border: 1px solid #e1d8e2; padding: 20px; border-radius: 8px; text-align: center; margin: 30px 0; }
-        .cv-btn { background-color: #5d1f5e; color: white !important; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; }
-        .cv-btn:hover { background-color: #431644; transform: translateY(-2px); }
+        /* Header & Nav */
+        header { border-bottom: 1px solid #eaecef; padding-bottom: 16px; margin-bottom: 32px; display: flex; justify-content: space-between; align-items: center; }
+        .name-logo { font-size: 1.5em; font-weight: bold; color: #4a148c; text-decoration: none; text-transform: uppercase; }
+        nav a { margin-left: 16px; text-decoration: none; color: #4a148c; font-weight: 500; }
+        nav a:hover { text-decoration: underline; }
 
-        h1 { color: #5d1f5e; margin-top: 0; }
-        h2 { color: #5d1f5e; border-bottom: 1px solid #5d1f5e; padding-bottom: 10px; margin-top: 45px; }
-        .date { color: #777; font-style: italic; float: right; }
-        li { margin-bottom: 15px; list-style-type: square; }
-        .publication-title { font-weight: bold; display: block; }
-        .journal { font-style: italic; color: #555; }
+        /* Profile Section */
+        .profile-container { display: flex; gap: 32px; margin-bottom: 40px; align-items: flex-start; }
+        .profile-pic { width: 220px; border-radius: 6px; border: 1px solid #eaecef; }
+        .profile-info h1 { margin-top: 0; font-size: 2em; color: #4a148c; }
+        .profile-info p { margin: 8px 0; }
+
+        /* Headings like the screenshot */
+        h2 { font-size: 1.5em; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid #eaecef; margin-top: 40px; margin-bottom: 16px; color: #000; }
+
+        /* Lists */
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; list-style-type: disc; }
+        
+        /* Links */
+        a { color: #4a148c; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .link-note { color: #6f42c1; font-size: 0.9em; }
     </style>
 </head>
 <body>
 
     <header>
-        <div style="font-weight: bold; color: #5d1f5e; font-size: 1.4em;">FARAHNAZ AMIRI</div>
-        <div class="nav">
+        <a href="#" class="name-logo">Farahnaz Amiri</a>
+        <nav>
             <a href="#about">About</a>
             <a href="#positions">Positions</a>
             <a href="#publications">Publications</a>
             <a href="#talks">Talks</a>
-        </div>
+        </nav>
     </header>
 
-    <section class="intro" id="about">
-        <img src="https://raw.githubusercontent.com/AmiriFarahnaz/FarahnazAmiri/main/Farahnaz-Amiri-Number-Theory.jpg" alt="Farahnaz Amiri">
-        <div class="intro-text">
+    <div class="profile-container" id="about">
+        <img src="https://raw.githubusercontent.com/AmiriFarahnaz/FarahnazAmiri/main/Farahnaz-Amiri-Number-Theory.jpg" alt="Farahnaz Amiri" class="profile-pic">
+        <div class="profile-info">
             <h1>Farahnaz Amiri</h1>
-            <p><b>Researcher (Visiting Scholar)</b><br> IPM (Institute for Research in Fundamental Sciences)</p>
-            <p>My research interests lie in <b>Arithmetic Statistics</b>, <b>Composition Laws</b>, and <b>Number Field Class Groups</b>.</p>
+            <p><strong>Researcher (Visiting Scholar)</strong></p>
+            <p>IPM (Institute for Research in Fundamental Sciences)</p>
+            <p>My research interests lie in <strong>Arithmetic Statistics</strong>, <strong>Composition Laws</strong>, and <strong>Number Field Class Groups</strong>.</p>
             <p>Email: <a href="mailto:f.amiri@ipm.ir">f.amiri@ipm.ir</a></p>
         </div>
-    </section>
-
-    <!-- CV Bar -->
-    <section class="cv-bar">
-        <p style="margin: 0 0 15px 0; font-size: 1.1em;">For more details on my academic background and experience:</p>
-        <a href="https://github.com/AmiriFarahnaz/FarahnazAmiri/blob/main/CV%20Farahnaz%20Amiri.pdf" target="_blank" class="cv-btn">Download Full CV (PDF)</a>
-    </section>
+    </div>
 
     <h2 id="positions">Positions</h2>
     <ul>
-        <li><b>Visiting Scholar</b>, IPM (Institute for Research in Fundamental Sciences), Tehran, Iran. <span class="date">2025 – Present</span></li>
-        <li><b>Postdoctoral Fellow</b>, Tsinghua BIMSA (Beijing Institute of Mathematical Sciences and Applications). <span class="date">2023 – 2025</span></li>
+        <li><strong>Visiting Scholar</strong>, IPM (Institute for Research in Fundamental Sciences). 2025 – Present</li>
+        <li><strong>Postdoctoral Fellow</strong>, Tsinghua BIMSA (Beijing Institute of Mathematical Sciences and Applications). 2023 – 2025</li>
     </ul>
 
     <h2 id="publications">Publications & Preprints</h2>
     <ul>
-        <li>
-            <span class="publication-title">The Class Number One Problem for Imaginary Octic Non-CM Extensions of \(\mathbb{Q}\)</span>
-            <span class="journal">Bulletin of the Iranian Mathematical Society (BIMS)</span>, Vol. 49, 2023.
-        </li>
-        <li>
-            <span class="publication-title">Computing \(p\)-Class Group Structure in Real Quadratic Fields: A New Approach</span>
-            <span class="journal">Submitted</span> (2026) | <a href="https://arxiv.org/abs/2601.19288" target="_blank">arXiv:2601.19288</a>
-        </li>
+        <li><strong>The Class Number One Problem for Imaginary Octic Non-CM Extensions of \(\mathbb{Q}\)</strong>. <em>Bulletin of the Iranian Mathematical Society (BIMS)</em> 49 (2023).</li>
+        <li><strong>Computing \(p\)-Class Group Structure in Real Quadratic Fields: A New Approach</strong>. <em>Submitted (2026)</em> | <a href="https://arxiv.org/abs/2601.19288" target="_blank">arXiv:2601.19288</a></li>
+        <li><strong>Average sizes of \(p\)-class groups in certain families of Number Fields</strong>. (In Preparation).</li>
     </ul>
 
-    <h2>In Preparation</h2>
+    <h2 id="talks">Invited Talks</h2>
     <ul>
-        <li>
-            <span class="publication-title">Average sizes of \(p\)-class groups in certain families of Number Fields.</span>
-            In collaboration with research groups at IPM and Tsinghua.
-        </li>
-        <li>
-            <span class="publication-title">On the distribution of class groups of non-abelian extensions.</span>
-        </li>
-    </ul>
-
-    <h2 id="talks">Selected Talks</h2>
-    <ul>
-        <li>
-            <b>Number Theory Seminar</b>, IPM, Tehran. <span class="date">May 2025</span><br>
-            <i>Topic: Composition Laws and Arithmetic Statistics.</i>
-        </li>
-        <li>
-            <b>BIMSA Math Colloquium</b>, Beijing, China. <span class="date">Nov 2024</span><br>
-            <i>Topic: Class groups of octic extensions.</i>
-        </li>
-        <li>
-            <b>International Workshop on Arithmetic Geometry</b>. <span class="date">2023</span><br>
-            <i>Topic: The Class Number One Problem.</i>
-        </li>
-    </ul>
-
-    <hr style="margin-top: 60px; border: 0; border-top: 1px solid #ddd;">
-    <p style="text-align: center; color: #888; font-size: 0.9em; margin-bottom: 40px;">
-        &copy; 2026 Farahnaz Amiri | Last updated: June 2026
-    </p>
-
-</body>
-</html>
+        <li><strong>Québec–Vermont Number Theory Seminar (QVNTS)</strong>. Montréal, Canada — Jan 2026. <a href="#" class="link-note">seminars</a></li>
+        <li><strong>Lodha Mathematical Sciences Institute Arithmetic Statistics Workshop</strong>. Mumbai, India — Aug 2025. <a href="#" class="link-note">program</a></li>
+        <li><strong>UCalgary Algebra and Number Theory Seminar</strong>. University of Calgary, Canada — Apr 2025.</li>
+        <li><strong>Waterloo Number Theory Seminar</strong>. University of Waterloo, Canada — Apr 
