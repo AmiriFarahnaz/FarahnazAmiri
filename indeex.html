@@ -3,40 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farahnaz Amiri</title>
-    <!-- MathJax for rendering math formulas -->
+    <title>Farahnaz Amiri | Research Website</title>
+    
+    <!-- MathJax for Mathematical Notation -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <style>
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        h1 { font-size: 2em; margin-bottom: 0.2em; }
-        h2 { border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; font-size: 1.4em; }
-        .contact { margin-bottom: 20px; }
-        ul { padding-left: 20px; margin-bottom: 20px; }
-        li { margin-bottom: 10px; }
-        a { color: #0056b3; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #333; max-width: 950px; margin: 0 auto; padding: 40px; background-color: #fcfcfc; }
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 50px; border-bottom: 2px solid #5d1f5e; padding-bottom: 15px; }
+        .nav a { margin-left: 20px; text-decoration: none; color: #5d1f5e; font-weight: 500; }
+        .intro { display: flex; gap: 50px; align-items: flex-start; margin-bottom: 30px; flex-wrap: wrap; }
+        .intro img { width: 280px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        .intro-text { flex: 1; min-width: 300px; }
+        
+        /* CV Bar Style */
+        .cv-bar { background-color: #f4f0f5; border: 1px solid #e1d8e2; padding: 20px; border-radius: 8px; text-align: center; margin: 30px 0; }
+        .cv-btn { background-color: #5d1f5e; color: white !important; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; }
+        .cv-btn:hover { background-color: #431644; transform: translateY(-2px); }
+
+        h1 { color: #5d1f5e; margin-top: 0; }
+        h2 { color: #5d1f5e; border-bottom: 1px solid #5d1f5e; padding-bottom: 10px; margin-top: 45px; }
+        .date { color: #777; font-style: italic; float: right; }
+        li { margin-bottom: 15px; list-style-type: square; }
+        .publication-title { font-weight: bold; display: block; }
+        .journal { font-style: italic; color: #555; }
     </style>
 </head>
 <body>
+
+    <header>
+        <div style="font-weight: bold; color: #5d1f5e; font-size: 1.4em;">FARAHNAZ AMIRI</div>
+        <div class="nav">
+            <a href="#about">About</a>
+            <a href="#positions">Positions</a>
+            <a href="#publications">Publications</a>
+            <a href="#talks">Talks</a>
+        </div>
+    </header>
 
     <section class="intro" id="about">
         <img src="https://raw.githubusercontent.com/AmiriFarahnaz/FarahnazAmiri/main/Farahnaz-Amiri-Number-Theory.jpg" alt="Farahnaz Amiri">
         <div class="intro-text">
             <h1>Farahnaz Amiri</h1>
-            <p><b>Researcher </p>
+            <p><b>Researcher (Visiting Scholar)</b><br> IPM (Institute for Research in Fundamental Sciences)</p>
             <p>My research interests lie in <b>Arithmetic Statistics</b>, <b>Composition Laws</b>, and <b>Number Field Class Groups</b>.</p>
+            <p>Email: <a href="mailto:f.amiri@ipm.ir">f.amiri@ipm.ir</a></p>
         </div>
     </section>
 
-    <h2>Research Interests</h2>
-    <p>Arithmetic Statistics, Class Group Structures, Higher Composition Laws, Arithmetic Geometry, Rank of Elliptic Curves.</p>
+    <!-- CV Bar -->
+    <section class="cv-bar">
+        <p style="margin: 0 0 15px 0; font-size: 1.1em;">For more details on my academic background and experience:</p>
+        <a href="https://github.com/AmiriFarahnaz/FarahnazAmiri/blob/main/CV%20Farahnaz%20Amiri.pdf" target="_blank" class="cv-btn">Download Full CV (PDF)</a>
+    </section>
 
-    <h2>Positions</h2>
+    <h2 id="positions">Positions</h2>
     <ul>
-        <li><strong>Researcher (Visiting Scholar)</strong>, IPM, Tehran, Iran. Sep 2025 – Present.</li>
-        <li><strong>Postdoctoral Fellow</strong>, BIMSA (Supported by Tsinghua University). Jul 2023 – Sep 2025.</li>
+        <li><b>Visiting Scholar</b>, IPM (Institute for Research in Fundamental Sciences), Tehran, Iran. <span class="date">2025 – Present</span></li>
+        <li><b>Postdoctoral Fellow</b>, Tsinghua BIMSA (Beijing Institute of Mathematical Sciences and Applications). <span class="date">2023 – 2025</span></li>
     </ul>
+
 
     <h2>Publications & Preprints</h2>
     <ul>
